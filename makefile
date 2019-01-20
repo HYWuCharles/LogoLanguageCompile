@@ -11,7 +11,7 @@ compile: compile.c parser.c dict.c FloatStack.c Stack.c SDLutil.c
 		$(CC) compile.c parser.c dict.c FloatStack.c Stack.c SDLutil.c -o compile $(CFLAGS) $(OPTIM)
 
 extension: compile_extension.c parser_extension.c dict.c FloatStack.c Stack.c SDLutil.c
-		$(CC) compile_extension.c parser_extension.c dict.c FloatStack.c Stack.c SDLutil.c -o compile $(CFLAGS) $(OPTIM)
+		$(CC) compile_extension.c parser_extension.c dict.c FloatStack.c Stack.c SDLutil.c -o extension $(CFLAGS) $(OPTIM)
 
 run: compile
 		./compile example.txt
